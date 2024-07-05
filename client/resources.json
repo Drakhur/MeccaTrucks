@@ -1,0 +1,54 @@
+{
+    "logo": [
+        {
+            "img": "photos/0C2A9514.JPG"
+        }
+    ],
+
+    "home": [
+      {
+        "title": "Project 1",
+        "image": "../IMG_0061.jpeg",
+        "description": ""
+      },
+      {
+        "title": "Project 2",
+        "image": "../IMG_4775.jpeg",
+        "description": ""
+      },
+      {
+        "title":"Project 3",
+        "image":"../IMG_0061.jpeg",
+        "description": "it is a cybersecurity Project that encrypts data"
+      }
+    ],  
+     "about": [
+        {
+        "title": "About US",
+        "image": "/photos/0C2A9514.JPG",
+        "description": "we are determined to bring the best service to you and guantee quality of the results"
+        }
+    ],
+    "blog": [
+      {
+        "title": "Blog Post 1",
+        "image": "../IMG_4775.jpeg",
+        "link": ""
+      },
+      {
+        "title": "Blog Post 2",
+        "image": "../IMG_4775.jpeg",
+        "link": ""
+      }
+    ],
+ 
+
+      "Contact": [
+      {
+      "EMail": "meccatrucks@gmail.com",
+      "Phone": "(509)218-9088",
+      "LinkedIn": "",
+      "GitHub": "https://www.github.com/Drakhur2"
+      }
+    ]
+  }

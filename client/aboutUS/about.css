@@ -1,0 +1,127 @@
+:root {
+    --dark: #374151;
+    --darker: #1f2937;
+    --darkest: #111827;
+    --gray: #6b7280;
+    --light: #eceff1;
+    --white:  white;
+    --black: #000000;
+    --pink: #ec4899;
+    --purple: #8b5cf6;
+    --light-blue: #1F6AB1;
+  }
+
+  *{
+    margin-top: 10px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all  .3s linear;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+  header{
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3%;
+    background: var(--dark);
+    z-index: 1001;
+  
+  }
+
+  header .logo{
+    font-size: 3rem;
+    color: var(--gray);
+    padding: 0rem;
+    text-decoration: none;
+
+}
+
+header .navbar a{
+    margin: 0 0.8rem;
+    font-size: 2rem;
+    color: var(--light);
+    padding: 0.3rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar a:hover {color: var(--darkest)}
+
+.content{
+    position: absolute; 
+    color: var(--black);
+    scroll-behavior: smooth;
+    margin-top: 10px; 
+    justify-content: center;
+    
+    overflow: hidden;
+
+}
+.content h3{
+    font-size: 3rem;
+}
+
+.content p{
+  color: var(--black);  
+  font-size: larger;
+  font-weight: bold;
+ }
+
+.hidden {
+  top: -150px; /* Adjust this value as needed */
+}
+html{
+  background: url(/photos/0C2A9388.JPG) no-repeat fixed center;
+   
+  background-size: cover;
+  fill-opacity: inherit;
+  backdrop-filter:  blur(8rem);
+  background-blend-mode:var(--black);
+}
+
+.test{
+  padding: auto;
+  
+}
+
+.image-container{
+  overflow: hidden fixed center;
+  background-size: cover;
+  opacity:  1;
+  height: 200px;
+  width: 200px;
+  z-index: 1002;
+  position: absolute;
+  margin:  -90px -20px 0 10px;
+
+  border-radius: 50%;
+  opacity: 1;
+  box-shadow: inset 0px 0px 20px 20px hsl(0, 0%, 97%),inset 0 0 60px rgba(77, 28, 28, 0.7),0 10px 30px -8px rgba(136, 61, 61, 0.5);
+}
+img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  z-index: 1000;
+  position: relative;
+  opacity: .5;
+}
+
+iframe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 360px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+}

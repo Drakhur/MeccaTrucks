@@ -1,0 +1,193 @@
+
+
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.top-section {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.slideshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 90vh;
+    overflow: hidden;
+}
+
+.slideshow img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.services-section {
+    display: flex;
+    justify-content: stretch;
+    margin: 0 0;
+}
+
+.service {
+    text-align: center;
+    text-decoration: none;
+}
+
+.service1 img {
+    width: 700px;
+    height: auto;
+    margin-bottom: 30px;
+    justify-self: spa;
+}
+.service1 a{
+    text-decoration: none;
+}
+
+
+.service2 img {
+    width: 700px;
+    height: auto;
+    margin-bottom: 30px;
+    justify-self: spa;
+}
+
+
+.service3 img {
+    width: 700px;
+    height: auto;
+    margin-bottom: 30px;
+    justify-self: spa;
+}
+
+
+.service a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.bottom-section {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.bottom-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-section label {
+    margin-bottom: 10px;
+}
+
+.bottom-section input[type="text"],
+.bottom-section input[type="email"],
+.bottom-section input[type="tel"],
+.bottom-section input[type="submit"],
+.bottom-section select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #444;
+    color: #fff;
+}
+
+.bottom-section input[type="submit"] {
+    cursor: pointer;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.bottom-section input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.image-container{
+    overflow: hidden fixed center;
+    background-size: cover;
+    opacity:  1;
+    height: 200px;
+    width: 200px;
+    z-index: 1002;
+    position: absolute;
+    margin: -100px -20px 0 10px;
+  
+    border-radius: 50%;
+    opacity: 1;
+    box-shadow: inset 0px 0px 20px 20px hsl(0, 0%, 97%),inset 0 0 60px rgba(77, 28, 28, 0.7),0 10px 30px -8px rgba(136, 61, 61, 0.5);
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: c;
+    justify-content: space-evenly;
+  }
+
+  .logo{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: left;
+    text-decoration: none;
+    color: var(--light);
+    font-size: 2rem;
+}
+
+
+header .navbar a{
+    margin: .3rem;
+    font-size: 2rem;
+    color: var(--darker);
+    padding: 0.3rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar a:hover, header .fa-bars:hover{
+    color: var(--light-blue);
+    transition: .3s  ease-in-out;
+}
+
+@media (min-width:  556px) and (max-width: 900px){
+    header .navbar a{font-size: 2rem;}
+    header .logo{display: block;} 
+  }
+
+  @media (min-width: 200px) and (max-width: 1100px){
+    .services-section{
+        position: relative;
+        display: block;
+        justify-content: center;
+    }
+    .service1 img{
+        justify-content: right;
+        margin-left: 10%;
+        z-index: -1;
+    }
+
+    .service2 img{
+        margin-left: 10%;
+        z-index: -1;
+    }
+
+    .service3 img{
+        max-width: fit-content;
+        margin-left: 10%;
+        z-index: -1;
+    }
+    .service1 a{
+        text-decoration: none;
+        color: white;
+        position: relative;
+
+    }
+
+
+  }

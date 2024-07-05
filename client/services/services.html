@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Truck Repair Services</title>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <header class="header" id="navbar">
+        <a href="#home" class="logo">services</a>
+
+        <nav class="navbar">
+            <a href="../home/index.html">home</a>
+            <a href="../aboutUS/about.html">About</a>
+            <a href="../services/services.html">services</a>
+            <a href="../schedule/schedule.html">schedule</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <i class="fa-solid fa-bars"></i>
+    </header>
+
+<div class="top-section">
+    <div class="slideshow">
+        <div class="image">
+            <img src="../imgs/fire_starter2.jpeg" alt="Service 1">
+        </div>
+    </div>
+</div>
+
+<div class="services-section">
+    <div class="service1">
+        <img src="../imgs/Seattle2.jpeg" alt="Service 1">
+        <a href="service1.html">Service 1</a>
+    </div>
+    <div class="service2">
+        <img src="../imgs/Seattle.jpeg" alt="Service 2">
+        <a href="service2.html">Service 2</a>
+    </div>
+    <div class="service3">
+        <img src="../imgs/shadow_park2.jpeg" alt="Service 3">
+        <a href="service3.html">Service 3</a>
+    </div>
+</div>
+
+<div class="bottom-section">
+    <h2>Request Service</h2>
+    <form action="submit_form.php" method="post">
+        <label for="service">Type of Service:</label>
+        <select id="service" name="service">
+            <option value="service1">Service 1</option>
+            <option value="service2">Service 2</option>
+            <option value="service3">Service 3</option>
+        </select>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>

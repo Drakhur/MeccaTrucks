@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>services</title>
+    <link rel="stylesheet" href="schedule.css">
+    <!-- <link rel="home" href="../aboutUS/about.css"> -->
+    <script src="schedule.js"></script>
+
+    <script src="https://unpkg.com/element-ui@2.4.6/lib/index.js"></script>
+    <script src="https://kit.fontawesome.com/d92dade2f2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header class="header" id="navbar">
+        <a href="../home/index.html" class="logo">T-Mecha Trucks and parts</a>
+
+        <nav class="navbar">
+            <a href="../home/index.html" style="transition: all 1s ease-in-out;">home</a>
+            <a href="../aboutUS/about.html">About</a>
+            <a href="../services/services.html">services</a>
+            <a href="../schedule/schedule.html">schedule</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <i class="fa-solid fa-bars"></i>
+    </header>
+
+    <div class="image-container">
+        <img src="../imgs/fire_starter2.jpeg" alt="navimage" id="mainImage"/>
+    </div>
+
+    <div class="container">
+        <h1>Schedule an Appointment</h1>
+        <form id="scheduleForm">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            <button type="submit">Schedule</button>
+        </form>
+        <div id="confirmation"></div>
+    </div>
+
+</body>
+</html>

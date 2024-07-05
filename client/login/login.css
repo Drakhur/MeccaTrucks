@@ -1,0 +1,79 @@
+:root {
+    --dark: #374151;
+    --darker: #1f2937;
+    --darkest: #111827;
+    --gray: #6b7280;
+    --light: #eceff1;
+    --white:  white;
+    --black: #000000;
+    --pink: #ec4899;
+    --purple: #8b5cf6;
+    --light-blue: #1F6AB1;
+  }
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    background-image: url(/photos/0C2A9322.JPG);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .login-container {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 10%;
+    padding: 25px;
+    border: 1px var(--black) solid;
+    box-shadow: inset 0 0 20px rgba(3, 22, 100, 0.5), 
+    inset 0 0 50px rgba(2, 24, 66, 0.5), 
+    0 0 20px rgba(64, 0, 255, 0.5);
+   justify-self: center;
+    border-radius: 5px;
+    
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    color: white;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fbfbfb;
+    border-radius: 5px;
+  }
+  input[type="text"]:focus,
+  input[type="password"]:focus{
+    background-color: rgb(31, 41, 182);
+    color: white;
+    outline: green;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #0066ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #111196;
+  }
+  
+  h2{
+    color: white;
+    font-weight: 700;
+    text-align: center;
+  }
