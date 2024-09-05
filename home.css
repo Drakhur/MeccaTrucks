@@ -1,0 +1,479 @@
+@import url('https://fonts.cdnfonts.com/css/ica-rubrik-black');
+
+:root {
+    --dark: #374151;
+    --darker: #1f2937;
+    --darkest: #111827;
+    --gray: #6b7280;
+    --light: #eceff1;
+    --white:  white;
+    --black: #000000;
+    --pink: #ec4899;
+    --purple: #8b5cf6;
+    --light-blue: #6fa4d5;
+  }
+
+  *{
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient( var(--dark), var(--darker));
+    
+  }
+
+  body{
+    /* background:#6fa4d5; */
+    /* border:aquamarine solid; */
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    background: #000000;
+    box-shadow: 
+      0px 0px 60px 30px #fff;
+    animation: pulseShadow 5s infinite ease-in-out;
+    margin-bottom: 40px;
+    /* overflow: hidden; */
+   
+  }
+  @keyframes pulseShadow{
+    0% {
+      box-shadow: 0px 0px 60px 30px #36393a;
+      }
+      50%{
+        box-shadow: 0px 0px 60px 30px #586867;
+      }
+      100%{
+        box-shadow: 0px 0px 60px 30px #533e3e77;
+      }
+  }
+
+  .header{
+    /* border: 2px solid green; */
+    background-color: var(--dark);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background: linear-gradient(to right, var(--dark),var(--darkest));
+    opacity: .6;
+    background-image: linear-gradient(to right, #f0f, #0ff,#fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .header .logo{
+    text-decoration: none;
+    color: #000000;
+    /* border: yellow solid; */
+    font-size: 2rem;
+    background: -o-repeating-linear-gradient(to right, var(--white), var(--darker));
+    
+  }
+  .header nav{
+    display: block;
+    /* border: #ec4899 solid; */
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(to right, #f0f, #0ff,#fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .header .navbar a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    background: transparent;
+    /* border: tan solid; */
+    margin: 20px;
+  }
+
+  .header .navbar a:hover{
+    box-shadow: 0px 0px 600px 10px var(--light-blue);
+  }
+  .header .navbar a:focus{
+    background: #0ff;
+    -webkit-text-fill-color: black;
+  }
+
+  .header .fa-bars{
+    /* border: #8b5cf6 solid; */
+    font-size: 2rem;
+    
+  }
+  #home{
+    position: relative;
+    /* border: #eceff1 solid; */
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 50%;
+    z-index: 2;
+    aspect-ratio: 1;
+    height: 500px;
+    box-shadow: 
+      0px 0px 1400px 90px #0ff;
+      transform: translate3d(5000,0px,1000px);
+  }
+
+  .wrapper{
+    
+    margin: auto;
+  
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 0;
+    max-width: 500px;
+    /* border: red solid; */
+    border-radius: 50%;
+    aspect-ratio: 1;
+  }
+
+  .wrapper img{
+    filter: drop-shadow(23px 23px 23px 23px);
+    filter: blur(21px);
+    border-radius: 50%;
+    aspect-ratio: 1;
+  }
+
+  #home .home-text{
+    text-align: center;
+    /* border: #6fa4d5 solid; */
+    padding: 10px;
+    margin: auto;
+    border-radius: 50%;
+    position: relative;
+    aspect-ratio: 1;
+  }
+  #home .home-text p{
+    font-size: 1.5rem;
+    color: var(--darkest);
+    background: transparent;
+    position: absolute;
+    margin-top: 150px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    z-index: 1;
+    box-shadow: 
+      0px 0px 60px 30px #fff;
+  }
+  #home .home-text h1{
+    font-size: 2.5rem;
+    position: absolute;
+    background: transparent;
+    margin-bottom: 20px;
+    box-shadow: 
+      0px 0px 100px 60px #f0f;
+  }
+
+  
+
+
+
+
+
+
+
+/* about section a lot of help from the video by "Lun Dev Code" */
+
+#about{
+  position: relative;
+  margin-top: 300px;
+  /* border: #f0f solid; */
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+
+}
+
+.team{
+  position: absolute;
+  background: transparent;
+  background-size: 20vh;
+  /* border: #0ff solid; */
+  width: 200px;
+  height: 250px;
+  top: 7%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: autoRun 29s linear infinite;
+}
+
+@keyframes autoRun{
+  from{
+    transform: perspective(1000px) rotateX(-10deg) rotateY(0deg);
+  }to{
+    transform: perspective(1000px) rotateX(-10deg) rotateY(360deg);
+  }
+}
+.member {
+  background: transparent;
+  position: absolute;
+  /* border: #330c8e solid; */
+  inset: 0px 0px 0 0;
+  transform: 
+    rotateY(calc( (var(--position) - 1 ) * (360 / var(--quantity))* 1deg ))  
+    translateZ(500px);
+}
+.member p{
+  position: absolute;
+  font-family: sans-serif;
+  background: transparent;
+  
+  font-weight: 500;
+  /* border: #330c8e solid; */
+  top: 20%;
+  -webkit-background-clip: text;
+  text-shadow: 4px 3px 4px var(--light-blue);
+  
+  -webkit-text-stroke: 1px rgba(68, 162, 234, 0.874);
+  -webkit-text-fill-color: transparent;
+}
+
+.member h2{
+  position: absolute;
+  font-family: 'Helvetica Neue';
+  background: transparent;
+  color: var(--darker);
+  font-weight: 600;
+  /* border: #f0f solid; */
+  top: -18px;
+  left: 13%;
+}
+.member img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border: #0ff solid; */
+  
+  left: -0px;
+}
+
+#about .MS{
+  /* border: bisque solid; */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1000px, 100vh);
+  height: max-content;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+}
+.aboutCont h1{
+  font-family: 'ICA Rubrik';
+  /* border: #330c8e solid; */
+  font-size: 6em;
+  line-height: 1em;
+  max-width: 100%;
+  -webkit-text-stroke: 3px  var(--darkest);
+  color: transparent;
+  background: transparent;
+  position: absolute;
+  height: 70vh;
+  top: -4%;
+  left: calc(40% - 100px);
+}
+#about .MS h1{
+  /* border: chocolate solid; */
+  font-family: 'ICA Rubrik';
+  font-size: 4em;
+  line-height: 1em;
+  max-width: 300px;
+  background-image: linear-gradient(to right, #f0f, #0ff,#fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} 
+
+#about .MS .content{
+  /* border: #0ff solid; */
+  font-family: Poppins;
+  text-align: center;
+  max-width: 600px;
+  background: transparent;
+}
+
+.MS .content p{
+  position: relative;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--darkest);
+  background: transparent;
+}
+
+
+
+
+/* services section */
+#Services{
+  border: #f0f solid;
+  width: 100%;
+  height: 100vh;
+  margin-top: 10%;
+  background-image: url(/photos/CEO-Background.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact section */
+  #contact{
+    position: relative;
+    
+    margin-top: 300px;
+    
+    /* TO DO */
+    /* display: none; */
+  }
+
+  #contact .row{
+    position: relative;
+    display: flex;
+    /* border: cyan solid; */
+    margin-top: 12px;
+    justify-content: space-between;
+  }
+
+  #contact .row .contact-left{
+    position: relative;
+    /* border: red solid; */
+    padding: 20px;
+    width: 240px;
+  }
+
+  .contact-left h1{
+    background: transparent;
+  }
+  .contact-left p{
+    font-size: 20px;
+    background: transparent;
+    color: cyan;
+  }
+  .social-icons{
+    position: relative;
+    /* border: #0ff solid; */
+    justify-content: space-between;
+
+  }
+
+  .social-icons i{
+    /* border: #6fa4d5 solid; */
+    margin: 10px;
+    /* border: tan solid; */
+    outline: none;
+    font-size: 30px;
+    border-radius: 50%;
+    transition: box-shadow 0.3s;
+  }
+  .social-icons i:hover{
+    box-shadow: inset 0px 0px 200px 20px #0ff;
+  }
+  .social-icons i:focus{
+    box-shadow: inset 0px 0px 200px 20px #f0f
+  }
+
+  #contact .row .contact-middle{
+    position: relative;
+    /* border: blue solid; */
+    width: 300px;
+  }
+  #contact .row .contact-right{
+    position: relative;
+    /* border: white solid; */
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: min-content;
+    justify-content: end;
+  }
+
+  .contact-middle h1{
+    background: transparent;
+    display: flex;
+    justify-content: center;
+  }
+  .contact-middle a{
+    text-decoration: none;
+    outline: none;
+    font-size: 1.4rem;
+    background: transparent;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    background-image: linear-gradient(to right, var(--light-blue), var(--light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: flow 3s infinite ease-in-out;
+    
+  }
+
+  @keyframes flow{
+    0% {
+      background-image: linear-gradient(to right, var(--light-blue), var(--light))
+    } 
+    50%{
+      background-image: linear-gradient(to right, var(--light), #fff );
+      
+    }
+    100% {
+      background-image: linear-gradient(to right, var(--light), var(--light-blue));
+    }
+  }
+  .contact-middle a:hover{
+    box-shadow: 0px 0px 600px 10px var(--light-blue);
+  }
+
+  input, textarea, button, #name, #email{
+    
+    border: none;
+    display: inline;
+  
+   
+    color: var(--light);
+    font-size: 1.65rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-image: linear-gradient(to right, var(--light-blue), var(--light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  #name{
+    /* border: #ec4899 solid; */
+    margin-bottom: 20px;
+    cursor:text;
+  }
+  #message{
+    cursor:text;
+  }
+  #email{
+    /* border: #ec4899 solid; */
+    margin-bottom: 20px;
+    cursor:text;
+  }
+  .submit{
+    position: relative;
+    /* border:#8b5cf6 solid; */
+    padding: 10px;
+    border-radius: 50px;
+    left: 200px;
+  }
+  .submit:hover{
+    box-shadow: 0px 0px 600px 10px var(--light-blue);
+  }
+  .submit:focus{
+    -webkit-text-fill-color: #0ff;
+
+  }
