@@ -1,14 +1,14 @@
 {
     "logo": [
         {
-            "img": "photos/0C2A9514.JPG"
+            "img": "./client/imgs/0C2A9514.JPG"
         }
     ],
 
     "home": [
       {
         "title": "Welcome to T-Mecha Trucks",
-        "image": "../IMG_0061.jpeg",
+        "image": "./imgs/IMG_0061.jpeg",
         "description": "We have everything you need from parts to services\t \njdjtukjs s jyjssssssssssssssssyj sryyyyyyyyyyyyyyy sy sry syj styjjjjjjjjjjjjjyyyyyyyyyy ryjjjjjjjjjjj ryj \t\t\nryj r yjryry jdjtukjsu dty utjtyj\t\nu tukts wrj46j 46j 4454j4q q4 q4\n"
       }
     ],  
