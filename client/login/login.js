@@ -23,13 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       })
       .then(data => {
-        // Handle successful login (redirect, display message, etc.)
-        console.log('Login successful:', data);
+        // Handle successful login (redirect, display message, etc.
         alert('Login successful!');
       })
       .catch(error => {
         // Handle login error (display error message, clear form, etc.)
-        console.error('Login error:', error);
+       
         alert('Login failed. Please try again.');
       });
     });
