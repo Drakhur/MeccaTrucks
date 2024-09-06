@@ -12,8 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // If registration is successful, redirect to login page
         // For demonstration purposes, we'll just log the credentials and redirect to login page
         console.log('Registration successful:');
-        console.log('Username:', username);
-        console.log('Password:', password);
 
         messageDiv.item(0).innerHTML = 'Registration Successful! redirecting to login page..!';
     
