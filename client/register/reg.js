@@ -8,10 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
 
-        // Simulate registration (you would replace this with actual registration logic)
-        // If registration is successful, redirect to login page
-        // For demonstration purposes, we'll just log the credentials and redirect to login page
-        console.log('Registration successful:');
+        // add registration logic kater
 
         messageDiv.item(0).innerHTML = 'Registration Successful! redirecting to login page..!';
     
